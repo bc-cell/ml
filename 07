@@ -1,11 +1,7 @@
 import numpy as np  
 import matplotlib.pyplot as plt  
-import pandas as pd  
-# Load the dataset  
-dataset = pd.read_csv('Social_Network_Ads.csv')  
-# Encoding categorical data if necessary (e.g., Gender column)  
-# Assume the dataset has columns [UserID, Gender, Age, EstimatedSalary, Purchased]  
-# If 'Gender' exists, encode it  
+import pandas as pd   
+dataset = pd.read_csv('Social_Network_Ads.csv')   
 if 'Gender' in dataset.columns:  
 from sklearn.preprocessing import LabelEncoder  
 le = LabelEncoder()  
